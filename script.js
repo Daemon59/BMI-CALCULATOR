@@ -3,10 +3,9 @@ function calculateBmi() {
 
     let weight = document.getElementById("w").value
     let height = document.getElementById("h").value
-
+    //bmi formula = weight/height²
     let bmi=  (weight) / (height/100*height/100)
-    //bmi formula = weight/height 
-
+    
     document.getElementById("heading").innerHTML = "Your BMI is: "
     document.getElementById("bmi-output").innerHTML = bmi.toFixed(2)
 
